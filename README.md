@@ -25,5 +25,5 @@ En el programa neural.py se debe modificar el path y dar un nombre al modelo (mo
 Modificar nuevamente el path de autoduck.py y cambiar el nombre al modelo que se creó. Autoduck.py puede ser ejecutado en el duckiebot ya que necesita trabajar con la librería de tensorflow que no está disponible en Python2, por lo que se debe ejecutar en una terminal de un computador que este conectado a duckiebot.
 Si todo sale como fue estipulado, al ejecutar autoduck.py se deberían ver los resultados de su modelo, generando la conducción autónoma del duckiebot.
 ## RECOMENDACIONES. 
-Para poder implementar el trabajo de mejor manera se debe contar con ROS2 en el duckiebot que soporte Python3 para poder trabajare con las librerías de tensorflow y keras desde el duckiebot.
+Para poder implementar el trabajo de mejor manera se debe contar con ROS2 en el duckiebot que soporte Python3 para poder trabajar con las librerías de tensorflow y keras desde el duckiebot.
 
