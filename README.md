@@ -1,10 +1,16 @@
 # DuckieTesla
 Proyecto Duckietown 2022 de conduccion autonoma mediante Reinforcement Learning
+
 **Archivos:**
-recorder.py : Este programa graba frames y las velocidades de Duckiebot.
-reader.py : Este programa permite abrir el conjunto de entrenamiento y leerlo.
-neural.py : Red neuronal convolucional para entrenar el modelo
-autoduck.py : Este programa permite mover autónomamente el Duckiebot.
+
+ - recorder.py : Este programa graba frames y las velocidades de Duckiebot.
+
+ - reader.py : Este programa permite abrir el conjunto de entrenamiento y leerlo.
+
+ - neural.py : Red neuronal convolucional para entrenar el modelo
+
+ - autoduck.py : Este programa permite mover autónomamente el Duckiebot.
+
 ## NECESARIO.
 Descargar las librerias de TensorFlow y Keras.
 ## DATA SET.
