@@ -10,6 +10,7 @@ class Template(object):
 	def __init__(self, args):
 		super(Template, self).__init__()
 		self.args = args
+		#modificar en la linea 14 la subscripción de la cámara
 		self.Sub_Cam = rospy.Subscriber("/duckiebot/camera_node/image/rect", Image, self.tomar_img)
 		self.i = 0
 		
@@ -20,11 +21,11 @@ class Template(object):
 		bridge = CvBridge()
 		image = bridge.imgmsg_to_cv2(msg, "bgr8") 
 		#Se declara la carpeta donde se guardaran las imagenes (crear en la misma ruta que se encuentra recorder.py)
-                path = 'duckietown/catkin_ws/src/desafios_2022/src'
-                #Se escribe la imagen en la caperta del path
-                nombre = "imagen"+str(self.i)+".jpg"
-                cv2.imwrite(nombre, cv2.cvtColor(image, cv2.COLOR_RGB2BGR))
-                self.i+=1
+        path = 'duckietown/catkin_ws/src/desafios_2022/src'
+        #Se escribe la imagen en la caperta del path
+        nombre = "imagen"+str(self.i)+".jpg"
+        cv2.imwrite(nombre, cv2.cvtColor(image, cv2.COLOR_RGB2BGR))
+        self.i+=1
 
 def main():
 	rospy.init_node('test') #creacion y registro del nodo!
