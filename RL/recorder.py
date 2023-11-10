@@ -27,6 +27,8 @@ class Template(object):
         cv2.imwrite(nombre, cv2.cvtColor(image, cv2.COLOR_RGB2BGR))
         self.i+=1
 
+#Crear una forma de guardar las velocidades lineales y angulares de las ruedas
+
 def main():
 	rospy.init_node('test') #creacion y registro del nodo!
 
